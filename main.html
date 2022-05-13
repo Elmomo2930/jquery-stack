@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first doc</title>
+
+    <!-- bootstrap cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- jquery cdn links -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="cont" class="col-xs-6 col-xs-offset-3">
+      <div class="row">
+        <h2>searchin data</h2>
+
+        <input
+          class="form-control"
+          type="text"
+          name="searchin"
+          id="searchin"
+          placeholder="search our data"
+        />
+
+        <br />
+        <br />
+
+        <h2 class="bg-success" id="results"></h2>
+      </div>
+
+        
+        <div class="row">
+           
+            <form method="post" id="add-obj" class="col-x-5" action="add_object.php">
+
+                <div class="form-group">
+
+                    <label for="obj-name">add truckname</label>
+
+                  <input type="text" name="obj_name" class="form-control" required>
+
+                </div>
+
+                <br>
+                <br>
+             
+                <div class="form-group">
+
+                    <input type="submit" class="btn btn-secondary" value="add object">
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="row">
+          
+            <div class="col-xs-6">
+                
+                <table class="table">
+                    
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>object</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="show-obj">
+                          
+                         
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <div class="col-xs-6">
+
+               <div id="action-contain">
+
+                   
+                   HEY ALIEN
+
+               </div>
+
+            </div>
+ 
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
